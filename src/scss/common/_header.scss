@@ -1,0 +1,27 @@
+.header {
+	width: 100%;
+	height: 20px;
+	padding-top: 10px;
+	padding-left: 28.2px;
+	padding-right: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+
+	.header_time {
+		font-family: "Noto Sans KR", sans-serif;
+		font-weight: bold;
+	}
+	.header_icon_list {
+		display: flex;
+		.header_icon {
+			margin-right: 10px;
+			&:last-child {
+				path {
+					color: #f1da08;
+				}
+			}
+		}
+	}
+}

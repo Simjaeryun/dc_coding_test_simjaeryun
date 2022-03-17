@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Info from './components/Info';
+import './scss/style.scss';
 
 function App() {
+  const path = process.env.PUBLIC_URL;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="dining">
+        <img src={`${path}/image/bg.jpg`} alt="지도 이미지" />
+        <Header />
+        <Info />
+      </div>
+
     </div>
   );
 }
